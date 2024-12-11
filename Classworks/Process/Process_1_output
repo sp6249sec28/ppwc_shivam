@@ -1,0 +1,47 @@
+student@iteradmin-Vostro-3268:~/Desktop/PPWC_2241016249/Process$ ./a.out
+I am a process 2272
+My parent is 2208
+pa
+^Z
+[2]+  Stopped                 ./a.out
+student@iteradmin-Vostro-3268:~/Desktop/PPWC_2241016249/Process$ ps
+    PID TTY          TIME CMD
+   2208 pts/0    00:00:00 bash
+   2236 pts/0    00:00:00 a.out
+   2272 pts/0    00:00:00 a.out
+   2277 pts/0    00:00:00 ps
+student@iteradmin-Vostro-3268:~/Desktop/PPWC_2241016249/Process$ ps -a
+    PID TTY          TIME CMD
+    999 tty2     00:00:17 Xorg
+   1176 tty2     00:00:00 gnome-session-b
+   2236 pts/0    00:00:00 a.out
+   2272 pts/0    00:00:00 a.out
+   2278 pts/0    00:00:00 ps
+student@iteradmin-Vostro-3268:~/Desktop/PPWC_2241016249/Process$ top
+
+top - 09:24:25 up 24 min,  1 user,  load average: 0.18, 0.20, 0.26
+Tasks: 210 total,   1 running, 207 sleeping,   2 stopped,   0 zombie
+%Cpu(s):  2.5 us,  0.9 sy,  0.0 ni, 96.5 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7821.9 total,   5863.2 free,    968.5 used,    990.1 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6465.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+    703 avahi     20   0   10980   6352   3452 S   4.7   0.1   2:12.31 avahi-d+ 
+    999 student   20   0  493776  79604  46888 S   2.3   1.0   0:21.08 Xorg     
+   1360 student   20   0 4580480 261740 104380 S   1.7   3.3   0:29.69 gnome-s+ 
+   2197 student   20   0  962648  51668  38952 S   1.7   0.6   0:02.40 gnome-t+ 
+      1 root      20   0  167720  11676   8432 S   0.0   0.1   0:01.83 systemd  
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd 
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ 
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_fl+ 
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns    
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ 
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+ 
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+ 
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+ 
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.03 ksoftir+ 
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.94 rcu_sch+ 
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migrati+ 
+[3]+  Stopped                 top
+student@iteradmin-Vostro-3268:~/Desktop/PPWC_2241016249/Process$ ^C
